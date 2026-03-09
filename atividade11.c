@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int ehPar(int numero){
+char ehPar(int numero){
     int treco;
     if(numero % 2 == 0){
-        return ("0");
+        return ('0');
     }
     else{
-        return ("1");
+        return ('1');
     }
 }
 
@@ -17,7 +17,7 @@ int main(){
     printf("---- 1 - Impar ----\n");
     printf("Digite um numero:\n");
     scanf("%d", &numero);
-    printf("O numero e: %d", parOuImpar);
+    printf("O numero e: %c", parOuImpar);
 
     return 0;
 }
